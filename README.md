@@ -27,4 +27,66 @@ Follow these steps to set up and run the application on your local machine.
 
 ```bash
 git clone <your-repository-url>
+cd flask-task-appgit clone https://github.com/devShahaj/flask-task-app.git
+```
+```bash
 cd flask-task-app
+```
+
+### 2. Create a virtual environment and activate it
+
+```bash
+python -m venv .venv
+```
+
+On Windows:
+```bash
+.\venv\Scripts\activate
+```
+
+On macOS/Linux:
+```bash
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Initialize the database
+
+```bash
+flask db upgrade
+```
+
+### 6. Run the application
+
+```bash
+python3 run.py
+```
+
+The application will be accessible at `http://127.0.0.1:5000/` in your web browser.
+
+## Project Structure
+
+```
+flask-task-app/
+├── app/
+│   ├── __init__.py
+│   ├── models.py
+│   ├── routes.py
+│   ├── forms.py
+│   └── templates/
+│       ├── base.html
+│       ├── index.html
+│       ├── login.html
+│       ├── register.html
+│       └── tasks.html
+├── migrations/
+├── .venv/
+├── config.py
+├── requirements.txt
+├── run.py
+└── README.md
