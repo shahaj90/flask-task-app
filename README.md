@@ -26,8 +26,7 @@ Follow these steps to set up and run the application on your local machine.
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
-cd flask-task-appgit clone https://github.com/devShahaj/flask-task-app.git
+git clone https://github.com/shahaj90/flask-task-app.git
 ```
 ```bash
 cd flask-task-app
@@ -36,7 +35,7 @@ cd flask-task-app
 ### 2. Create a virtual environment and activate it
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 On Windows:
